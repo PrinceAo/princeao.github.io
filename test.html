@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+     <head>
+           <style>
+                 .body{text-align: center;}
+           </style>
+            <script>
+              var t = 0;
+             function Click(){
+                t += 1;
+                document.getElementById("Onclick").innerHTML = "点击次数:" + t;
+             }
+            </script>
+     </head>
+    <body class="body">
+          <input type="button" value="签到" onclick="Click()"/>
+          <br>
+          <h3 id="Onclick">点击人数:</h3>
+    </body>
+</html>
