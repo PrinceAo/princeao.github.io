@@ -2,7 +2,7 @@
 <html>
      <head>
            <style>
-                 .body{text-align: center;}
+                 body{text-align: center;}
            </style>
             <script>
              var t = 0;
@@ -10,23 +10,13 @@
                 t += 1;
                 document.getElementById("Onclick").innerHTML = "点击次数:" + t;
              }
-           </script>
-           <script>
-               function Message(message){
-                   alert(message);
-               }
-           </script>
+          </script>
      </head>
-    <body class="body">
+    <body>
           <div>
              <input type="button" value="签到" onclick="Click()"/>
              <br>
              <h3 id="Onclick">点击人数:</h3>
-          </div>
-          <br>
-          <div>
-             <input id="tb1" type="textbox" value="点击输入" />
-             <input type="button" value="弹出" onClick="Message(tb1)">
           </div>
     </body>
 </html>
