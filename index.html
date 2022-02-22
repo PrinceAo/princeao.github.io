@@ -1,11 +1,27 @@
 <!doctype html>
 <html>
    <head>
+     <style>
+       body{text-align:center}
+</style>
      <title>首页</title>
   </head>
   <body>
+    <script>
+        function Check(password){
+           if(password == "123456789"){
+               window.location.assign("https://xiaobairuanjian.xyz/click.html")
+           }
+        }
+    <script/>
     <h1>Hello!</h1>
      <br>
      <button><a href="test.html">签到</a></button>
+     <br/>
+     <input type="button" value="如果我们认识请输入密码后点这里" onclick="Check(document.getElementById("pass").value)"/>
+     <br/>
+     <p>密码输入框:</p>
+     <br/>
+     <textbox id="pass">
   </body>
 </html>
