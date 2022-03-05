@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>专门为somebody设计的页面</title>
+    <style>
+      body{text-align:center;}
+    </style>
+  </head>
+  <body>
+    <script>
+    function PrintYourName(str){
+       alert("大家都向我看，这是我的新儿子(指填这个名字的人(doge)):"+str);
+    }
+      
+      function Check(name){
+         if(name == "CYY" || name== "cyy" || name="陈玥颖"){
+             alert("YOU LOOK LIKE A DOG.LOL!!!");
+             var v = prompt("你是怎么知道这个彩蛋的?");
+             if(v != null && v != ""){
+               var bol = confirm("如果你是我的classmate请给我的QQ发信息哈哈哈哈哈!听到了吗?");
+               if(bol == false){
+                 alert("故意的吧,你个doge");
+               }
+               else{
+                 alert("哈哈哈哈还是你懂我bro");
+               }
+             }
+             else{
+               alert("不是兄弟你别发空白啊");
+             }
+         }
+        else{
+             alert("你输入错了,这是你输入的:" + name);
+             var c = confirm("哈哈哈哈哈哈哈是不是非常好玩？");
+             if(c == true){
+                 alert("哈哈哈哈哈哈哈哈哈");
+             }
+          else{
+             alert("不好玩？我看你是欠揍！（doge）");
+          }
+        }
+      }
+    </script>
+    <h2>检查你输入的名字</h2>
+    <br>
+    <input title="检查" type="submit" value="提交你所输入的名字" onclick="Check(document.getElementById('textbox').value);" />
+    <br>
+    <input type="text" id="textbox" />
+    <br>
+    <h2>输入你的名字就打印出你的名字</h2>
+    <br>
+    <input type="submit" value="提交打印" onclick="PrintYourName(document.getElementById('nametbox').value)" />
+    <br>
+    <input type="text" id="nametbox" />
+  </body>
+</html>
