@@ -13,7 +13,7 @@
     }
       
       function Check(name){
-         if(name == "CYY" || name== "cyy" || name="陈玥颖"){
+         if(name == "CYY" || name== "cyy" || name == "陈玥颖"){
              alert("YOU LOOK LIKE A DOG.LOL!!!");
              var v = prompt("你是怎么知道这个彩蛋的?");
              if(v != null && v != ""){
@@ -30,14 +30,19 @@
              }
          }
         else{
+          if(name.replace(/^\s+|\s+$/g,"") != "" || name != null){
              alert("你输入错了,这是你输入的:" + name);
              var c = confirm("哈哈哈哈哈哈哈是不是非常好玩？");
              if(c == true){
-                 alert("哈哈哈哈哈哈哈哈哈");
+                alert("哈哈哈哈哈哈哈哈哈");
              }
-          else{
-             alert("不好玩？我看你是欠揍！（doge）");
-          }
+             else{
+                alert("不好玩？我看你是欠揍！（doge）");
+             }
+         }
+         else{
+            alert("兄弟别输没用的东西来应付我啊!");
+         }
         }
       }
     </script>
